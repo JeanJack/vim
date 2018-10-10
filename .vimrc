@@ -54,6 +54,12 @@ inoremap <c-o>o <esc>o
 inoremap <c-o>O <esc>O
 inoremap <c-v> <esc>v
 inoremap ::e \e[;m<esc>hi
+inoremap ( ()<left>
+inoremap { {<cr>}
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap [ []<left>
+inoremap < <><left>
 
 
 function! s:insert_gates()
