@@ -45,7 +45,7 @@ syn keyword cConstant PTHREAD_COND_INITIALIZER PTHREAD_MUTEX_INITIALIZER TRUE FA
 
 " C Libft Functions
 
-syn keyword cLibft ft_atoi ft_bzero ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isin ft_isprint ft_itoa ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap ft_lstnew ft_memalloc ft_memcpy ft_memchr ft_memcmp ft_memcpy ft_memdel ft_memmove ft_memset ft_print_mem ft_putchar ft_putchar_fd ft_putendl ft_putendl_fd ft_putnbr ft_putnbr_fd ft_putstr ft_putstr_fd ft_strcat ft_strchr ft_strclr ft_strcmp ft_strcpy ft_strdel ft_strdup ft_strequ ft_striter ft_striteri ft_strjoin ft_strlcat ft_strlen ft_strmap ft_strmapi ft_strncat ft_strncmp ft_strncpy ft_strnequ ft_strnew ft_strnstr ft_strrchr ft_strsplit ft_strstr ft_strsub ft_strtrim ft_strtrim_c ft_tolower ft_toupper
+syn keyword cLibft ft_atoi ft_bzero ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isin ft_isprint ft_itoa ft_lstadd ft_lstdel ft_lstdelone ft_lstiter ft_lstmap ft_lstnew ft_memalloc ft_memcpy ft_memchr ft_memcmp ft_memccpy ft_memdel ft_memmove ft_memset ft_print_mem ft_putchar ft_putchar_fd ft_putendl ft_putendl_fd ft_putnbr ft_putnbr_fd ft_putstr ft_putstr_fd ft_strcat ft_strchr ft_strclr ft_strcmp ft_strcpy ft_strdel ft_strdup ft_strequ ft_striter ft_striteri ft_strjoin ft_strlcat ft_strlen ft_strmap ft_strmapi ft_strncat ft_strncmp ft_strncpy ft_strnequ ft_strnew ft_strnstr ft_strrchr ft_strsplit ft_strstr ft_strsub ft_strtrim ft_strtrim_c ft_tolower ft_toupper
 
 " FIN
 
@@ -274,7 +274,7 @@ if exists("c_gnu")
   syn keyword	cOperator	typeof __real__ __imag__
 endif
 syn keyword	cType		int long short char void
-syn keyword	cType		signed unsigned float double
+syn keyword	cType		signed unsigned float double restrict
 if !exists("c_no_ansi") || exists("c_ansi_typedefs")
   syn keyword   cType		size_t ssize_t off_t wchar_t ptrdiff_t sig_atomic_t fpos_t
   syn keyword   cType		clock_t time_t va_list jmp_buf FILE DIR div_t ldiv_t

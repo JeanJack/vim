@@ -59,7 +59,6 @@ inoremap { {<cr>}
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap [ []<left>
-inoremap < <><left>
 
 
 function! s:insert_gates()
